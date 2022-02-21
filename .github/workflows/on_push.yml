@@ -17,6 +17,7 @@ jobs:
           retention-days: 2
 
   lint:
+    needs: setup-repo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
@@ -32,6 +33,7 @@ jobs:
         run: npm run lint
 
   test:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v2
