@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --config jest.config.ts --verbose",
     "build": "tsc --project ./",
-    "lint": "npx eslint . --ext .js,.ts"
+    "lint": "npx eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
