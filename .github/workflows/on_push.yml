@@ -3,6 +3,7 @@ on: [push]
 jobs:
   setup-repo:
     runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
@@ -42,4 +43,3 @@ jobs:
           cache: 'npm'
       - name: Run tests
         run: npm test
-
