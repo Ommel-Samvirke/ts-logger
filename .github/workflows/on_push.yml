@@ -43,5 +43,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
+      - name: Install Node modules
+        run: npm install
       - name: Run tests
         run: npm test
